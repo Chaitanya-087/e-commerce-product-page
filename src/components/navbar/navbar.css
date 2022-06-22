@@ -1,0 +1,136 @@
+.navbar__container{
+    background-color: var(--white);
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar__wrapper{
+    background-color: var(--white);
+    width: 80%;
+    padding: 0 32px;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-bottom:1px solid var(--grayish_blue) ;
+}
+.navbar__brand{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar__brand>img{
+    height: 24px;
+    object-fit: contain;
+}
+.menu__wrapper{
+    width: 100%;
+    margin-left: 2rem;
+}
+.menu{
+    display: flex;
+    height: 80px;
+    gap: 1rem;
+}
+
+.menu__item{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.menu__item::after
+{
+    --height:3px;
+    content: '';
+    top:calc(100% - var(--height));
+    position: absolute;
+    width: 100%;
+    height:var(--height);
+}
+.menu__item:hover::after {
+    background-color: var(--orange);
+}
+.menu__link{
+    color: var(--grayish_blue);
+    cursor:pointer;
+    padding-inline:0.25rem ;
+}
+
+
+.menu__item:hover .menu__link{
+    color: var(--very_dark_blue);
+}
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.cart{
+    cursor: pointer;
+}
+
+.user__signin{
+    cursor:pointer;
+}
+.user__signin > img{
+    width:40px;
+    object-fit: contain;
+    border-radius: 100%;
+    transition: box-shadow 0.2s ease-in-out;
+}
+.user__signin > img:hover{
+    box-shadow: 0 0 0 2px var(--orange);
+}
+.menu-icon{
+    display: none;
+}
+.cart{
+    position: relative;
+}
+.cart-notification{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 12px;
+    background-color: var(--orange);
+    border-radius:50px;
+    color: #fff;
+    display: grid;
+    place-content: center;
+    font-size:9px;
+    font-weight: 700;
+    transform: translate(50%,-30%);
+}
+@media screen and (max-width:48em){
+    .navbar__container{
+        height: 60px;
+    }
+    .navbar__wrapper{
+        width: 100%;
+        border: none;
+        padding: 0 20px;
+    }
+    .menu__wrapper{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1rem;
+    }
+    .user{
+        margin-left: auto;
+    }
+}
