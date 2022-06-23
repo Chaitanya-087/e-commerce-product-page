@@ -16,7 +16,7 @@ const Cart = ({cart,state}) => {
               <h3 className='cart__title'>cart</h3>
             </div>
               <div className='cart__items'>
-                {isCartOpen&&Object.keys(cart).length ?
+                {Object.keys(cart).length ?
                   <>
                       <div className='cart-details'>
                         <img src={cart.productThumbnail} alt={`${cart.title}`} className='cart-item-thumbnail' />
