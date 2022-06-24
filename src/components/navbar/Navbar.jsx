@@ -20,7 +20,7 @@ const Navbar = ({ toggle }) => {
                     <div className="menu-icon" onClick={toggle}>
                         <img src={MenuIcon} alt="menu-icon" />
                     </div>
-                    <a className="navbar__brand" href="/">
+                    <a className="navbar__brand" href="/" title='home'>
                         <img src={Logo} alt="" />
                     </a>
                     <nav className="menu__wrapper">
