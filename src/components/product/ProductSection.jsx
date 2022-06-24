@@ -103,7 +103,7 @@ const ProductSection = () => {
             <span className='product-company'>{productdetails.company}</span>
             <h1
               className='product-title'
-              aria-label='fall limited edition sneakers'>
+              >
               {productdetails.title}
             </h1>
             <p className='product-desc'>{productdetails.desc}</p>
@@ -132,7 +132,7 @@ const ProductSection = () => {
                     fillRule='nonzero'
                   />
                 </svg>
-                <p>Add to cart</p>
+                Add to cart
               </button>
             </div>
           </div>
