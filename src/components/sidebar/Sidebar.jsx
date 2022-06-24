@@ -9,7 +9,7 @@ const sidebar = ({open,toggle}) => {
           <div className='close-icon' onClick={toggle}>
             <img src={CloseIcon} alt="close-icon" />
           </div>
-          <nav className="sidebar__menu-wrapper">
+          <div className="sidebar__menu-wrapper">
             <ul className='sidebar__menu'>
               <li className="sidebar__menu-item">
                 <a className="sidebar__menu-link" href='/collections'>Collections</a>
@@ -27,7 +27,7 @@ const sidebar = ({open,toggle}) => {
                 <a className="sidebar__menu-link" href='/contact'>Contact</a>
               </li>
             </ul>
-          </nav>
+          </div>
         </div>
       </aside>
     </>
