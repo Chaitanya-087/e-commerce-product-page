@@ -80,6 +80,7 @@
 
 .user__signin{
     cursor:pointer;
+    position: relative;
 }
 .user__signin > img{
     width:40px;
@@ -111,6 +112,48 @@
     font-weight: 700;
     transform: translate(50%,-30%);
 }
+.signin{
+    position: absolute;
+    top: 150%;
+    width: 200px;
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+    display: none;
+    flex-direction: column;
+    transform: translateX(-50%);
+}
+.signin[data-openlogin ="true"]{
+    display: flex;
+}
+.login-title{
+    border-bottom:1px solid var(--grayish_blue) ;
+    display: flex;
+    align-items: center;
+    padding: 0.25rem 0 0.25rem 1.5rem;
+}
+.btn-wrapper{
+    padding: 0.75rem 0;
+    display: flex;
+    justify-content: center;
+}
+.btn-signin{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--orange);
+    padding: 0.75rem;
+    gap: 1rem;
+    border-radius:5px ;
+    color: #fff;
+}
+
+.btn-signin > p{
+    white-space:nowrap;
+    font-weight: 700;
+}
+
 @media screen and (max-width:48em){
     .navbar__container{
         height: 60px;
@@ -132,5 +175,8 @@
     }
     .user{
         margin-left: auto;
+    }
+    .signin{
+        transform: translateX(-80%);
     }
 }

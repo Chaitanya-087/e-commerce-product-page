@@ -1,7 +1,7 @@
 import React from 'react'
 import { useContext } from 'react';
 import Delete from '../../images/icon-delete.svg'
-import { CartContext } from '../CartContext';
+import { CartContext } from '../../helpers/CartContext';
 import './cart.css'
 
 const Cart = ({cart,state}) => {

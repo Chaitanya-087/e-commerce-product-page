@@ -1,6 +1,6 @@
 import "./productsection.css";
 import LightBox from "../product/LightBox";
-import { CartContext } from "../CartContext";
+import { CartContext } from "../../helpers/CartContext";
 import Plus from "../../images/icon-plus.svg";
 import Minus from "../../images/icon-minus.svg";
 import { useMediaQuery } from "react-responsive";
