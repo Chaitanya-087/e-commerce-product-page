@@ -39,7 +39,7 @@ const ProductSection = () => {
   const isMobile = useMediaQuery({ query: "(max-width:48em)" })
   const { cart, setCart,setCartNotify } = useContext(CartContext)
   return (
-    <section className='product__container'>
+    <section className='product__container' role='main'>
       <div className='product__wrapper'>
         <div className='product-image__wrapper'>
           <div className='product-image center' >
